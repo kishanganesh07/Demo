@@ -143,10 +143,7 @@ export default function Home() {
                 Our cross-disciplinary teams blend strategic consulting with deep technical expertise to deliver transformative results.
               </p>
             </div>
-            <div className="flex gap-3 flex-shrink-0">
-              <button className="material-symbols-outlined w-12 h-12 border border-secondary-fixed rounded-full flex items-center justify-center hover:bg-on-background hover:text-background transition-all">west</button>
-              <button className="material-symbols-outlined w-12 h-12 border border-secondary-fixed rounded-full flex items-center justify-center hover:bg-on-background hover:text-background transition-all">east</button>
-            </div>
+           
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {servicesData.map((s) => (
@@ -301,9 +298,7 @@ export default function Home() {
               <h2 className="font-headline-lg text-headline-lg mb-3">Strategic Insights</h2>
               <p className="text-on-surface-variant text-lg">Thought leadership from our team of senior architects and AI researchers.</p>
             </div>
-            <a href="#" className="font-bold text-sm border-b-2 border-on-background pb-0.5 hover:text-primary hover:border-primary transition-colors whitespace-nowrap">
-              View All Insights
-            </a>
+           
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {articles.map((art) => (
