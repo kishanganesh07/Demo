@@ -58,7 +58,7 @@ export default function ServiceDetail() {
         </section>
 
         {/* ── THEORY SECTION ────────────────── */}
-        <section className="bg-surface-container-low border-y border-secondary-fixed py-24 px-margin-desktop">
+        <section className="bg-white border-y border-secondary-fixed py-24 px-margin-desktop">
           <div className="max-w-container-max mx-auto grid lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">
               <SectionLabel>Methodology</SectionLabel>
