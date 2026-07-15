@@ -29,7 +29,8 @@ export default function Services() {
         />
 
         {/* ── SERVICE LIST ──────────────────── */}
-        <section className="pb-section-gap px-margin-desktop max-w-container-max mx-auto">
+        <section className="py-section-gap bg-white border-y border-secondary-fixed mt-10">
+          <div className="max-w-container-max mx-auto px-margin-desktop">
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesData.map((svc) => (
               <StaggerItem key={svc.slug} direction="up">
@@ -50,13 +51,14 @@ export default function Services() {
                 </Link>
               </StaggerItem>
             ))}
-          </StaggerContainer>
+            </StaggerContainer>
+          </div>
         </section>
 
         {/* ── METHODOLOGY (Vertical Timeline) ── */}
         <div className="bg-surface-container-low border-y border-secondary-fixed">
           <VerticalStepTimeline
-            title="The NovaTech Protocol"
+            title="The MATRIX IT Protocol"
             subtitle="A rigorous, end-to-end delivery framework designed for velocity and precision."
             steps={protocol}
           />

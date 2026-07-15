@@ -314,84 +314,11 @@ export default function Contact() {
               <div className="mt-8 space-y-4">
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary text-lg">mail</span>
-                  <a href="mailto:audit@novatech.com" className="text-sm text-on-surface-variant hover:text-primary transition-colors">audit@novatech.com</a>
+                  <a href="mailto:audit@matrixit.com" className="text-sm text-on-surface-variant hover:text-primary transition-colors">audit@matrixit.com</a>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary text-lg">call</span>
                   <a href="tel:+18005550199" className="text-sm text-on-surface-variant hover:text-primary transition-colors">+1 (800) 555-0199</a>
-                </div>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
-
-        {/* ══ GLOBAL FOOTPRINT ══════════════════ */}
-        <section className="bg-on-background text-surface py-24 border-y border-secondary-fixed">
-          <div className="max-w-container-max mx-auto px-margin-desktop">
-            
-            {/* Header */}
-            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12 mb-16">
-              <FadeIn direction="right" className="max-w-xl">
-                <h2 className="uppercase mb-6 tracking-tight" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 700, fontFamily: 'Space Grotesk' }}>
-                  Global <br />Footprint
-                </h2>
-                <p className="text-lg leading-relaxed text-surface-variant/80">
-                  Our operational nodes are strategically distributed across high-density data corridors to ensure zero-latency governance.
-                </p>
-              </FadeIn>
-              
-              <FadeIn direction="left">
-                <div className="flex items-end gap-10 border-b border-primary/30 pb-4">
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-1" style={{ fontFamily: 'Space Grotesk' }}>14</div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-surface/60">Operational Nodes</div>
-                  </div>
-                  <div className="w-px h-12 bg-primary/30"></div>
-                  <div>
-                    <div className="text-4xl font-bold text-primary mb-1" style={{ fontFamily: 'Space Grotesk' }}>06</div>
-                    <div className="text-[10px] font-bold uppercase tracking-widest text-surface/60">Regional Hubs</div>
-                  </div>
-                </div>
-              </FadeIn>
-            </div>
-
-            {/* Map Area */}
-            <FadeIn direction="up">
-              <div className="relative w-full aspect-[16/9] md:aspect-[21/9] border-[3px] border-primary rounded-sm p-1">
-                <div 
-                  className="w-full h-full relative overflow-hidden bg-[#242628]"
-                  style={{ 
-                    backgroundImage: 'radial-gradient(circle, rgba(223,255,0,0.15) 1px, transparent 1px)',
-                    backgroundSize: '20px 20px'
-                  }}
-                >
-                  {/* Subtle placeholder map background - using a highly desaturated world map */}
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1200px-World_map_-_low_resolution.svg.png" 
-                    alt="World Map" 
-                    className="absolute inset-0 w-full h-full object-contain opacity-[0.03] grayscale"
-                  />
-                  
-                  {/* Nodes */}
-                  <div className="absolute top-[35%] left-[25%] w-3 h-3 border border-primary bg-primary/20 animate-pulse"></div>
-                  <div className="absolute top-[45%] left-[18%] w-3 h-3 border border-primary bg-primary/20 animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                  <div className="absolute top-[42%] left-[45%] w-3 h-3 border border-primary bg-primary/20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-                  <div className="absolute top-[28%] left-[51%] w-3 h-3 border border-primary bg-primary/20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
-                  <div className="absolute top-[48%] left-[72%] w-3 h-3 border border-primary bg-primary/20 animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                  
-                  {/* Active Node (Zurich) */}
-                  <div className="absolute top-[28%] left-[51%] group cursor-crosshair z-10">
-                    <div className="w-3 h-3 bg-primary rounded-sm shadow-[0_0_15px_rgba(223,255,0,0.8)]"></div>
-                    
-                    {/* Tooltip Card */}
-                    <div className="absolute top-6 left-1/2 -translate-x-1/2 w-[280px] bg-white text-on-background p-6 rounded shadow-2xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-secondary-fixed">
-                      <div className="text-[10px] font-bold text-primary tracking-widest uppercase mb-2">Node Status: Active</div>
-                      <h4 className="text-2xl font-bold uppercase tracking-tight mb-3" style={{ fontFamily: 'Space Grotesk' }}>Zürich HQ</h4>
-                      <p className="text-xs text-on-surface-variant leading-relaxed">
-                        Primary governance hub and architectural design laboratory. Tier 4 redundancy.
-                      </p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </FadeIn>
@@ -440,7 +367,7 @@ export default function Contact() {
               We only take projects that redefine industries. If your infrastructure demands precision, we should talk.
             </p>
             <a
-              href="mailto:audit@novatech.com"
+              href="mailto:audit@matrixit.com"
               className="inline-flex items-center gap-3 px-10 py-4 rounded-xl font-bold text-base hover:opacity-90 transition-all active:scale-95"
               style={{ background: '#dfff00', color: '#1A1C1E' }}
             >

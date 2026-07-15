@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { FadeIn, StaggerContainer, StaggerItem } from '../components/Animations'
 import { VerticalStepTimeline } from '../components/PageLayout'
+import LogoTicker from '../components/LogoTicker'
 
 
 /* ── DATA ─────────────────────────────────── */
@@ -129,24 +130,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ══ MARQUEE ═══════════════════════════ */}
-        <section className="py-14 bg-white overflow-hidden" style={{ borderTop: '1px solid rgba(217,223,234,0.3)', borderBottom: '1px solid rgba(217,223,234,0.3)' }}>
-          <p className="text-center text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-10">
-            Inspired by Global Enterprise Leaders
-          </p>
-          <div className="relative flex overflow-x-hidden">
-            <div className="flex animate-marquee whitespace-nowrap gap-20 items-center" style={{ opacity: 0.45 }}>
-              {[...logos, ...logos].map((l, i) => (
-                <span key={i} className="text-2xl font-black tracking-tighter text-on-background" style={{ fontFamily: 'Space Grotesk' }}>
-                  {l}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* ══ CLIENT LOGO TICKER ════════════════ */}
+        <LogoTicker />
 
         {/* ══ SERVICES ══════════════════════════ */}
-        <section className="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+        <section className="py-section-gap bg-white border-y border-secondary-fixed">
+          <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up" className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-8">
             <div className="max-w-2xl">
               <h2 className="font-headline-lg text-headline-lg mb-4">World-Class Digital Services</h2>
@@ -174,6 +163,7 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+          </div>
         </section>
 
         {/* ══ WHY US ════════════════════════════ */}
@@ -184,7 +174,7 @@ export default function Home() {
                 Why Strategic Leaders <span style={{ color: '#dfff00' }}>Partner With Us</span>
               </h2>
               <p className="text-lg leading-relaxed mb-10" style={{ color: 'rgba(242,242,220,0.7)' }}>
-                NovaTech combines the agility of a tech firm with the strategic rigor of a global consultancy. We don't just build technology; we engineer business outcomes.
+                MATRIX IT combines the agility of a tech firm with the strategic rigor of a global consultancy. We don't just build technology; we engineer business outcomes.
               </p>
               <div className="space-y-5">
                 {[
@@ -249,7 +239,8 @@ export default function Home() {
         </section>
 
         {/* ══ RESULTS DELIVERED ════════════════ */}
-        <section className="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+        <section className="py-section-gap bg-white border-y border-secondary-fixed mt-10">
+          <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up">
             <h2 className="font-headline-lg text-headline-lg mb-14">Results Delivered</h2>
           </FadeIn>
@@ -276,7 +267,8 @@ export default function Home() {
                 </div>
               </StaggerItem>
             ))}
-          </StaggerContainer>
+            </StaggerContainer>
+          </div>
         </section>
 
         {/* ══ ENGINEERING LIFECYCLE (Vertical) ════════════ */}
@@ -302,7 +294,8 @@ export default function Home() {
         </div>
 
         {/* ══ STRATEGIC INSIGHTS ═══════════════ */}
-        <section className="py-section-gap max-w-container-max mx-auto px-margin-desktop">
+        <section className="py-section-gap border-y border-secondary-fixed" style={{ backgroundColor: '#ffffff', backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
+          <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up" className="flex flex-col sm:flex-row justify-between items-baseline mb-12 gap-4">
             <div>
               <h2 className="font-headline-lg text-headline-lg mb-3">Strategic Insights</h2>
@@ -315,7 +308,7 @@ export default function Home() {
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {articles.map((art) => (
               <StaggerItem key={art.title} direction="up">
-                <article className="bg-surface border border-secondary-fixed rounded-2xl p-8 flex flex-col h-full hover:-translate-y-1.5 transition-all duration-300 swiss-shadow">
+                <article className="bg-white border border-secondary-fixed rounded-2xl p-8 flex flex-col h-full hover:-translate-y-1.5 transition-all duration-300 swiss-shadow">
                   <span className="text-[10px] font-bold text-primary uppercase tracking-widest mb-4">{art.type}</span>
                   <h3 className="font-semibold text-xl leading-snug mb-4">{art.title}</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">{art.body}</p>
@@ -330,6 +323,7 @@ export default function Home() {
               </StaggerItem>
             ))}
           </StaggerContainer>
+          </div>
         </section>
 
       </main>

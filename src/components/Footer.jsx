@@ -15,7 +15,7 @@ export default function Footer() {
         {/* Brand column */}
         <div className="col-span-2 sm:col-span-3 md:col-span-1">
           <Link to="/" className="inline-block font-extrabold text-xl mb-5 text-on-surface" style={{ fontFamily: 'Space Grotesk' }}>
-            NovaTech
+            MATRIX IT
           </Link>
           <p className="text-on-surface-variant text-sm leading-relaxed mb-6 max-w-[220px]">
             Engineering precision for a data-driven future. Global HQ in New York.
@@ -53,7 +53,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="max-w-container-max mx-auto px-margin-desktop py-6 border-t border-secondary-fixed/40 flex flex-col sm:flex-row justify-between items-center gap-3">
         <p className="text-xs text-on-surface-variant">
-          © {new Date().getFullYear()} NovaTech Solutions. Engineering precision for a data-driven future.
+          © {new Date().getFullYear()} MATRIX IT Solutions. Engineering precision for a data-driven future.
         </p>
         <span className="text-xs font-bold uppercase tracking-widest text-primary">Status: Systems Operational</span>
       </div>

@@ -50,7 +50,7 @@ export default function About() {
                   <span className="text-primary italic inline-block overflow-hidden"><RevealText text="Enterprise Future" delay={0.2} /></span>
                 </h1>
                 <p className="text-xl max-w-2xl text-on-surface-variant mb-12 leading-relaxed">
-                  NovaTech is a high-precision architectural consultancy specialized in next-generation AI infrastructure and structural IT integrity. We build for permanence in a landscape of temporary solutions.
+                  MATRIX IT is a high-precision IT consultancy specialized in next-generation AI infrastructure and structural digital integrity. We build for permanence in a landscape of temporary solutions.
                 </p>
                 <div className="flex gap-4">
                   <Link to="/contact" className="px-8 py-4 rounded-xl font-bold text-base hover:opacity-90 transition-all active:scale-95" style={{ background: '#dfff00', color: '#1A1C1E' }}>
@@ -75,59 +75,61 @@ export default function About() {
         </div>
 
         {/* ── PHILOSOPHY ─────────────────────── */}
-        <section className="px-margin-desktop py-section-gap max-w-container-max mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
-            <FadeIn direction="right" className="lg:col-span-5 mb-12 lg:mb-0">
-              <h2 className="mb-8 leading-tight" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>
-                Architecting <br />Absolute Integrity
-              </h2>
-              <p className="text-on-surface-variant leading-relaxed max-w-md text-lg">
-                Our approach is rooted in the Swiss tradition of functional reduction. We believe that clarity is the ultimate form of security in digital infrastructure.
-              </p>
-            </FadeIn>
-            <div className="lg:col-span-7 space-y-16">
-              <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <StaggerItem direction="up">
-                  <div className="p-10 bg-surface-container-low border border-secondary-fixed rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-                    <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6">01 / REDUCTION</div>
-                    <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Functional Void</h3>
-                    <p className="text-on-surface-variant text-sm leading-relaxed">
-                      We eliminate the non-essential. In IT architecture, complexity is the enemy of security. Our Swiss-inspired approach focuses on the raw skeletal structure of systems.
-                    </p>
-                  </div>
-                </StaggerItem>
-                <StaggerItem direction="up">
-                  <div className="p-10 bg-on-background text-surface border border-on-background rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-                    <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6" style={{ color: '#dfff00' }}>02 / INTEGRITY</div>
-                    <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Structural Purity</h3>
-                    <p className="opacity-70 text-sm leading-relaxed">
-                      Every line of code, every server blade, every data packet must serve a defined architectural purpose. We do not hide failures behind layers of middleware.
-                    </p>
-                  </div>
-                </StaggerItem>
-              </StaggerContainer>
-              <FadeIn direction="up">
-                <div className="group overflow-hidden rounded-2xl aspect-[16/7] relative border border-secondary-fixed shadow-md hover:shadow-xl transition-all duration-500">
-                  <ParallaxImage 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7uK_bofnTTNvjoYMVNx7MOOZgp4MJ0S9sCVl9q_zPKqWmt5UCdiKjzkakZGJIgfSz3dYbBKYmvcldlIzAG6oi8wz1uAlRDZysYXAkH_pe-dLQAjsPJ7GDhWJiGRpo11AfD0T3jqgMoT6RKxxjLig82nIhy4fS8mT2v4f0Aj-itSPVfXVsQtXH8M_hFrsO6AenjpfqPEDm4IVEOx-MqtnVQIO8J4tVqoWY5cJCoQYC-x9j1xFF8Vmf"
-                    alt="Minimalist brutalist architecture"
-                    className="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000"
-                  />
-                  <div className="absolute top-8 left-8 bg-surface/95 backdrop-blur px-5 py-2 rounded-full border border-secondary-fixed text-xs font-bold uppercase tracking-widest text-on-surface">
-                    V.01 CORE ARCHITECTURE
-                  </div>
-                </div>
+        <section className="py-section-gap bg-white border-y border-secondary-fixed mt-10">
+          <div className="max-w-container-max mx-auto px-margin-desktop">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+              <FadeIn direction="right" className="lg:col-span-5 mb-12 lg:mb-0">
+                <h2 className="mb-8 leading-tight" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>
+                  Architecting <br />Absolute Integrity
+                </h2>
+                <p className="text-on-surface-variant leading-relaxed max-w-md text-lg">
+                  Our approach is rooted in the Swiss tradition of functional reduction. We believe that clarity is the ultimate form of security in digital infrastructure.
+                </p>
               </FadeIn>
+              <div className="lg:col-span-7 space-y-16">
+                <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <StaggerItem direction="up">
+                    <div className="p-10 bg-surface-container-low border border-secondary-fixed rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6">01 / REDUCTION</div>
+                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Functional Void</h3>
+                      <p className="text-on-surface-variant text-sm leading-relaxed">
+                        We eliminate the non-essential. In IT architecture, complexity is the enemy of security. Our Swiss-inspired approach focuses on the raw skeletal structure of systems.
+                      </p>
+                    </div>
+                  </StaggerItem>
+                  <StaggerItem direction="up">
+                    <div className="p-10 bg-on-background text-surface border border-on-background rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
+                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6" style={{ color: '#dfff00' }}>02 / INTEGRITY</div>
+                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Structural Purity</h3>
+                      <p className="opacity-70 text-sm leading-relaxed">
+                        Every line of code, every server blade, every data packet must serve a defined architectural purpose. We do not hide failures behind layers of middleware.
+                      </p>
+                    </div>
+                  </StaggerItem>
+                </StaggerContainer>
+                <FadeIn direction="up">
+                  <div className="group overflow-hidden rounded-2xl aspect-[16/7] relative border border-secondary-fixed shadow-md hover:shadow-xl transition-all duration-500">
+                    <ParallaxImage 
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7uK_bofnTTNvjoYMVNx7MOOZgp4MJ0S9sCVl9q_zPKqWmt5UCdiKjzkakZGJIgfSz3dYbBKYmvcldlIzAG6oi8wz1uAlRDZysYXAkH_pe-dLQAjsPJ7GDhWJiGRpo11AfD0T3jqgMoT6RKxxjLig82nIhy4fS8mT2v4f0Aj-itSPVfXVsQtXH8M_hFrsO6AenjpfqPEDm4IVEOx-MqtnVQIO8J4tVqoWY5cJCoQYC-x9j1xFF8Vmf"
+                      alt="Minimalist brutalist architecture"
+                      className="w-full h-full grayscale group-hover:grayscale-0 transition-all duration-1000"
+                    />
+                    <div className="absolute top-8 left-8 bg-surface/95 backdrop-blur px-5 py-2 rounded-full border border-secondary-fixed text-xs font-bold uppercase tracking-widest text-on-surface">
+                      V.01 CORE ARCHITECTURE
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
             </div>
           </div>
         </section>
 
         {/* ── LEADERSHIP ─────────────────────── */}
-        <section className="bg-surface-container-low px-margin-desktop py-section-gap border-y border-secondary-fixed">
+        <section className="bg-white px-margin-desktop py-section-gap border-y border-secondary-fixed">
           <div className="max-w-container-max mx-auto">
             <FadeIn direction="up" className="text-center mb-24 max-w-2xl mx-auto">
               <h2 className="mb-6" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>Leadership Architecture</h2>
-              <p className="text-on-surface-variant text-lg">The minds behind NovaTech. A multidisciplinary collective dedicated to the permanence of digital structures.</p>
+              <p className="text-on-surface-variant text-lg">The minds behind MATRIX IT. A multidisciplinary collective dedicated to the permanence of digital structures.</p>
             </FadeIn>
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {leaders.map((l, i) => (

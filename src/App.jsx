@@ -15,6 +15,7 @@ import CaseStudies from './pages/CaseStudies'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import ServiceDetail from './pages/ServiceDetail'
+import Solutions from './pages/Solutions'
 
 function App() {
   return (

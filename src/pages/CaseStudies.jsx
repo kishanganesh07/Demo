@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import { FadeIn, StaggerContainer, StaggerItem, AnimatedCounter } from '../components/Animations'
+import { FadeIn, AnimatedCounter } from '../components/Animations'
 import { PageHero, SectionLabel } from '../components/PageLayout'
 
 import { caseStudiesData } from '../data/caseStudiesData'
@@ -21,49 +21,51 @@ export default function CaseStudies() {
           body="Our work focuses on critical infrastructure and high-performance systems. We re-engineer the digital fabric for the world's most demanding industries."
         />
 
-        {/* ── CASE STUDIES LIST ─────────────── */}
-        <section className="pb-section-gap px-margin-desktop max-w-container-max mx-auto space-y-24">
-          {caseStudiesData.map((cs, i) => (
-            <FadeIn key={cs.id} direction="up">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div className={`aspect-[4/3] rounded-2xl overflow-hidden swiss-shadow ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <img
-                    alt={cs.title}
-                    src={cs.image}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
-                  />
-                </div>
-                <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
-                  <div className="text-xs font-bold text-primary uppercase tracking-widest mb-4 flex items-center gap-3">
-                    {cs.client} 
-                    <span className="w-1 h-1 rounded-full bg-on-surface-variant"></span> 
-                    {cs.tags.join(', ')}
+        {/* ── CASE STUDIES GRID ───────────────── */}
+        <section className="py-section-gap bg-white border-y border-secondary-fixed mt-10">
+          <div className="max-w-container-max mx-auto px-margin-desktop space-y-24">
+            {caseStudiesData.map((cs, i) => (
+              <FadeIn key={cs.id} direction="up">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                  <div className={`aspect-[4/3] rounded-2xl overflow-hidden swiss-shadow ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
+                    <img
+                      alt={cs.title}
+                      src={cs.image}
+                      className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                    />
                   </div>
-                  <h2 className="font-semibold mb-6" style={{ fontSize: '32px', lineHeight: 1.2, fontFamily: 'Space Grotesk', fontWeight: 700 }}>
-                    {cs.title}
-                  </h2>
-                  <p className="text-on-surface-variant text-lg leading-relaxed mb-8 border-l-2 border-primary pl-4 italic">
-                    {cs.desc}
-                  </p>
-                  
-                  <div className="space-y-6">
-                    <div>
-                      <div className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">The Problem</div>
-                      <p className="text-sm leading-relaxed text-on-background">{cs.problem}</p>
+                  <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
+                    <div className="text-xs font-bold text-primary uppercase tracking-widest mb-4 flex items-center gap-3">
+                      {cs.client} 
+                      <span className="w-1 h-1 rounded-full bg-on-surface-variant"></span> 
+                      {cs.tags.join(', ')}
                     </div>
-                    <div>
-                      <div className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">The Solution</div>
-                      <p className="text-sm leading-relaxed text-on-background">{cs.solution}</p>
-                    </div>
-                    <div className="bg-surface-container-low p-6 rounded-xl border border-secondary-fixed mt-4">
-                      <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Impact Delivered</div>
-                      <p className="text-sm font-medium leading-relaxed">{cs.impact}</p>
+                    <h2 className="font-semibold mb-6" style={{ fontSize: '32px', lineHeight: 1.2, fontFamily: 'Space Grotesk', fontWeight: 700 }}>
+                      {cs.title}
+                    </h2>
+                    <p className="text-on-surface-variant text-lg leading-relaxed mb-8 border-l-2 border-primary pl-4 italic">
+                      {cs.desc}
+                    </p>
+                    
+                    <div className="space-y-6">
+                      <div>
+                        <div className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">The Problem</div>
+                        <p className="text-sm leading-relaxed text-on-background">{cs.problem}</p>
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">The Solution</div>
+                        <p className="text-sm leading-relaxed text-on-background">{cs.solution}</p>
+                      </div>
+                      <div className="bg-surface-container-low p-6 rounded-xl border border-secondary-fixed mt-4">
+                        <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Impact Delivered</div>
+                        <p className="text-sm font-medium leading-relaxed">{cs.impact}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            ))}
+          </div>
         </section>
 
         {/* ── CTA ───────────────────────────── */}

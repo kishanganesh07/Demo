@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import { servicesData } from '../data/servicesData'
 
 const navLinks = [
   { label: 'Home',         to: '/' },
@@ -29,24 +30,69 @@ export default function Header() {
           className="text-xl font-extrabold tracking-tight text-on-background"
           style={{ fontFamily: 'Space Grotesk' }}
         >
-          NovaTech
+          MATRIX IT
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.label}
-              to={link.to}
-              className={
-                isActive(link.to)
-                  ? 'text-sm font-bold text-primary border-b-2 border-primary pb-1 transition-colors'
-                  : 'text-sm font-medium text-on-surface-variant hover:text-primary transition-colors'
-              }
-            >
-              {link.label}
-            </Link>
-          ))}
+        <div className="hidden md:flex items-center gap-8 h-full">
+          {navLinks.map((link) => {
+            if (link.label === 'Services') {
+              return (
+                <div key={link.label} className="group h-full flex items-center">
+                  <Link
+                    to={link.to}
+                    className={
+                      isActive(link.to)
+                        ? 'text-sm font-bold text-primary border-b-2 border-primary pb-1 transition-colors h-full flex items-center'
+                        : 'text-sm font-medium text-on-surface-variant hover:text-primary transition-colors h-full flex items-center'
+                    }
+                  >
+                    {link.label}
+                    <span className="material-symbols-outlined text-[16px] ml-1 group-hover:rotate-180 transition-transform duration-300">expand_more</span>
+                  </Link>
+                  
+                  {/* Mega Menu Dropdown */}
+                  <div className="absolute top-[80px] left-0 w-full bg-surface-container-lowest border-b border-secondary-fixed shadow-2xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 ease-out z-40">
+                    <div className="max-w-container-max mx-auto px-margin-desktop py-12 grid grid-cols-4 gap-8">
+                      <div className="col-span-1">
+                        <h3 className="text-xl font-bold font-['Space_Grotesk'] text-primary mb-4">Our Services</h3>
+                        <p className="text-sm text-on-surface-variant leading-relaxed mb-6">
+                          We architect immutable IT infrastructure and sovereign AI systems for the world's most critical enterprises.
+                        </p>
+                        <Link to="/services" className="text-sm font-bold text-primary hover:underline flex items-center gap-1">
+                          View All Services <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                        </Link>
+                      </div>
+                      <div className="col-span-3 grid grid-cols-3 gap-x-8 gap-y-6">
+                        {servicesData.slice(0, 9).map(service => (
+                          <Link key={service.id} to={`/services/${service.slug}`} className="group/item flex items-start gap-4 p-3 -mx-3 rounded-xl hover:bg-surface-container-low transition-colors">
+                            <span className="material-symbols-outlined text-primary bg-surface-container-high p-2 rounded-lg group-hover/item:bg-primary group-hover/item:text-[#1A1C1E] transition-colors">{service.icon}</span>
+                            <div>
+                              <div className="font-bold text-sm text-on-background group-hover/item:text-primary transition-colors mb-1">{service.title}</div>
+                              <div className="text-xs text-on-surface-variant line-clamp-2">{service.desc}</div>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            }
+            return (
+              <Link
+                key={link.label}
+                to={link.to}
+                className={
+                  isActive(link.to)
+                    ? 'text-sm font-bold text-primary border-b-2 border-primary pb-1 transition-colors'
+                    : 'text-sm font-medium text-on-surface-variant hover:text-primary transition-colors'
+                }
+              >
+                {link.label}
+              </Link>
+            )
+          })}
         </div>
 
         {/* Right controls */}
