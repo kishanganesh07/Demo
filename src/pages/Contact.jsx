@@ -289,26 +289,7 @@ export default function Contact() {
 
             {/* Priority Support CTA */}
             <FadeIn direction="up" delay={0.3}>
-              <div className="mt-14 pt-10 border-t border-secondary-fixed">
-                <div className="rounded-2xl p-8 text-surface" style={{ background: '#1A1C1E' }}>
-                  <div className="flex items-start gap-4 mb-5">
-                    <span className="material-symbols-outlined text-2xl flex-shrink-0" style={{ color: '#dfff00' }}>support_agent</span>
-                    <div>
-                      <h4 className="font-bold uppercase text-sm tracking-widest mb-1">Priority Support</h4>
-                      <p className="text-xs leading-relaxed" style={{ color: 'rgba(242,242,220,0.6)' }}>
-                        Dedicated L3 engineers available 24/7 for managed service accounts.
-                      </p>
-                    </div>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex items-center gap-2 font-bold uppercase text-[11px] tracking-widest hover:gap-4 transition-all duration-200"
-                    style={{ color: '#dfff00' }}
-                  >
-                    Login to Portal <span className="material-symbols-outlined text-base">key</span>
-                  </a>
-                </div>
-              </div>
+             
 
               {/* Direct contact */}
               <div className="mt-8 space-y-4">
