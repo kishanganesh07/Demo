@@ -51,9 +51,9 @@ const caseStudies = [
 ]
 
 const articles = [
-  { type: 'WHITE PAPER',    title: 'The Future of AI in Enterprise Infrastructure',   body: 'Exploring the transition from experimental pilots to production-ready AI ecosystems.',  author: 'Dr. Sarah Jenkins', role: 'Chief AI Architect' },
-  { type: 'STRATEGY GUIDE', title: 'Multi-Cloud Migration: Avoiding Vendor Lock-In',  body: 'Strategic frameworks for building resilient, portable cloud architectures.',             author: 'Mark Sterling',     role: 'VP of Engineering' },
-  { type: 'TECHNICAL CASE', title: 'Generative AI for Legacy Code Refactoring',        body: 'How we used specialized LLMs to accelerate a legacy systems modernization project.',     author: 'Anita Rao',         role: 'Senior DevOps Lead' },
+  { type: 'WHITE PAPER',    title: 'The Future of AI in Enterprise Infrastructure',   body: 'Exploring the transition from experimental pilots to production-ready AI ecosystems.',  author: 'Dr. Sarah Jenkins', role: 'Chief AI Architect', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150' },
+  { type: 'STRATEGY GUIDE', title: 'Multi-Cloud Migration: Avoiding Vendor Lock-In',  body: 'Strategic frameworks for building resilient, portable cloud architectures.',             author: 'Mark Sterling',     role: 'VP of Engineering', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150' },
+  { type: 'TECHNICAL CASE', title: 'Generative AI for Legacy Code Refactoring',        body: 'How we used specialized LLMs to accelerate a legacy systems modernization project.',     author: 'Anita Rao',         role: 'Senior DevOps Lead', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150&h=150' },
 ]
 
 /* ── STAT COUNTER HOOK ─────────────────────── */
@@ -308,7 +308,7 @@ export default function Home() {
                   <h3 className="font-semibold text-xl leading-snug mb-4">{art.title}</h3>
                   <p className="text-on-surface-variant text-sm leading-relaxed mb-8 flex-grow">{art.body}</p>
                   <div className="flex items-center gap-4">
-                    <div className="w-10 h-10 rounded-full bg-surface-container flex-shrink-0" />
+                    <img src={art.img} alt={art.author} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
                     <div>
                       <div className="text-xs font-bold">{art.author}</div>
                       <div className="text-[10px] text-on-surface-variant">{art.role}</div>
