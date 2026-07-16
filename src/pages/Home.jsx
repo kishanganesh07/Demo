@@ -121,8 +121,8 @@ export default function Home() {
               <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full pointer-events-none" style={{ background: 'rgba(223,255,0,0.18)', filter: 'blur(60px)' }} />
               <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full pointer-events-none" style={{ background: 'rgba(87,101,0,0.1)', filter: 'blur(40px)' }} />
               <img 
-                src="https://i.pinimg.com/736x/6d/d8/bd/6dd8bd1e5b85b3f77415f9cca5da9b06.jpg" 
-                alt="Network Technology Visualization" 
+                src="https://scontent.xx.fbcdn.net/v/t39.105495-1/748514247_1070822015281988_3962168946378935250_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=hNqMLCvOi6YQ7kNvwFlxBm3&sdl=0&ccb=14-4&oh=00_AQCa9nJlaS9RkpyHj5WiiZSNd9Krg00NyQPoEcn644fh1A&oe=6A5E780B&_nc_sid=a21977" 
+                alt="IT Solutions Visualization" 
                 className="relative z-10 w-full drop-shadow-2xl rounded-2xl object-cover"
                 style={{ maxHeight: '380px', objectFit: 'cover' }}
               />
