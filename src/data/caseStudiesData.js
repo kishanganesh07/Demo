@@ -4,7 +4,7 @@ export const caseStudiesData = [
     client: 'GLOBAL BANK',
     title: 'Core Modernization',
     desc: 'Decommissioning a 30-year-old mainframe without disrupting $4T in daily transactional volume.',
-    image: 'https://i.pinimg.com/736x/96/db/d3/96dbd3c5c5f68ae2636c6d7e477bc9dd.jpg',
+    image: 'https://i.pinimg.com/736x/96/db/d3/96dbd3c5c5f68ae2636c6d7e477bc9dd.jpg?auto=format&fit=crop&q=80&w=1200&h=800',
     tags: ['Cloud Architecture', 'Security'],
     problem: 'The client was bound to a monolithic legacy mainframe that cost $45M annually in maintenance alone. Transaction processing times were degrading, and introducing new digital banking products took 14 months on average. They needed to move to a cloud-native microservices architecture without a single second of downtime for their $4T daily transaction volume.',
     solution: 'We implemented the "Strangler Fig" pattern. Instead of a risky big-bang migration, we deployed a modern API Gateway that securely routed traffic between the legacy mainframe and a new, scalable Kubernetes cluster on AWS. Over 18 months, we systematically migrated core banking logic into 45 isolated microservices.',

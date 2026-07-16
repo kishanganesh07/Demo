@@ -8,18 +8,21 @@ const offices = [
   {
     city: 'San Francisco',
     badge: 'HQ',
+    contactName: 'Marcus Chen, US Lead',
     address: '44 Montgomery St, Floor 12\nSan Francisco, CA 94104',
     phone: '+1 (415) 555-0123',
     href: 'tel:+14155550123',
   },
   {
     city: 'London',
+    contactName: 'Sarah Jenkins, UK Lead',
     address: '30 St Mary Axe, Level 15\nLondon EC3A 8BF',
     phone: '+44 20 7946 0000',
     href: 'tel:+442079460000',
   },
   {
     city: 'Singapore',
+    contactName: 'David Chen, APAC Lead',
     address: '79 Robinson Rd, Level 22\nSingapore 068897',
     phone: '+65 6789 0000',
     href: 'tel:+6567890000',
@@ -102,7 +105,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="text-on-background font-body-md min-h-screen flex flex-col">
+    <div className="bg-white text-on-background font-body-md min-h-screen flex flex-col">
       <Header />
 
       <main className="flex-1">
@@ -141,11 +144,11 @@ export default function Contact() {
         <section className="max-w-container-max mx-auto px-margin-desktop py-24 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
 
           {/* ── CONTACT FORM (left 7 cols) ─────── */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-3xl border border-secondary-fixed shadow-sm">
             <FadeIn direction="up">
               <div className="mb-14">
                 <h2 className="uppercase mb-4 tracking-tight" style={{ fontSize: '32px', fontWeight: 700, fontFamily: 'Space Grotesk' }}>
-                  Transmission
+                  Contact Us
                 </h2>
                 <div className="h-1 w-20" style={{ background: '#dfff00' }} />
               </div>
@@ -155,8 +158,8 @@ export default function Contact() {
               <FadeIn direction="up">
                 <div className="rounded-2xl p-16 text-center border border-secondary-fixed" style={{ background: '#dfff00' }}>
                   <span className="material-symbols-outlined text-5xl mb-4 block" style={{ color: '#1A1C1E' }}>check_circle</span>
-                  <h3 className="font-bold text-2xl mb-3" style={{ fontFamily: 'Space Grotesk', color: '#1A1C1E' }}>Transmission Received</h3>
-                  <p style={{ color: '#1A1C1E', opacity: 0.7 }}>Our principal architects will review your brief and respond within 2 business days.</p>
+                  <h3 className="font-bold text-2xl mb-3" style={{ fontFamily: 'Space Grotesk', color: '#1A1C1E' }}>Message Sent</h3>
+                  <p style={{ color: '#1A1C1E', opacity: 0.7 }}>Our team will review your message and respond within 2 business days.</p>
                 </div>
               </FadeIn>
             ) : (
@@ -166,7 +169,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
                     <div className="group">
                       <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors">
-                        Subject Name
+                        Full Name
                       </label>
                       <input
                         type="text"
@@ -179,7 +182,7 @@ export default function Contact() {
                     </div>
                     <div className="group">
                       <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors">
-                        Digital Address
+                        Email Address
                       </label>
                       <input
                         type="email"
@@ -196,7 +199,7 @@ export default function Contact() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8">
                     <div className="group">
                       <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors">
-                        Engagement Type
+                        Service Required
                       </label>
                       <select
                         value={form.service}
@@ -211,7 +214,7 @@ export default function Contact() {
                     </div>
                     <div className="group">
                       <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors">
-                        Resource Load
+                        Budget / Scope
                       </label>
                       <input
                         type="text"
@@ -226,11 +229,11 @@ export default function Contact() {
                   {/* Technical context */}
                   <div className="group">
                     <label className="block text-[10px] font-bold uppercase tracking-widest text-on-surface-variant mb-2 group-focus-within:text-primary transition-colors">
-                      Technical Context
+                      Message
                     </label>
                     <textarea
                       rows={5}
-                      placeholder="Describe your current infrastructure constraints, goals, and timelines…"
+                      placeholder="How can we help you?"
                       required
                       value={form.message}
                       onChange={e => setForm({ ...form, message: e.target.value })}
@@ -243,7 +246,7 @@ export default function Contact() {
                     type="submit"
                     className="group flex items-center gap-4 font-bold uppercase tracking-widest text-primary hover:gap-6 transition-all duration-200 py-4"
                   >
-                    Send Transmission
+                    Send Message
                     <span className="material-symbols-outlined">east</span>
                   </button>
                 </form>
@@ -273,6 +276,12 @@ export default function Contact() {
                         </span>
                       )}
                     </div>
+                    {o.contactName && (
+                      <p className="text-sm font-semibold mb-2 text-primary">
+                        <span className="material-symbols-outlined text-[14px] align-middle mr-1">person</span>
+                        {o.contactName}
+                      </p>
+                    )}
                     <p className="text-on-surface-variant text-sm leading-relaxed mb-3 whitespace-pre-line">
                       {o.address}
                     </p>

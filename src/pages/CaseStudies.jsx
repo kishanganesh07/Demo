@@ -31,7 +31,7 @@ export default function CaseStudies() {
                     <img
                       alt={cs.title}
                       src={cs.image}
-                      className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
+                      className="w-full h-full object-contain bg-white grayscale hover:grayscale-0 transition-all duration-700 hover:scale-105"
                     />
                   </div>
                   <div className={i % 2 === 1 ? 'lg:order-1' : ''}>
