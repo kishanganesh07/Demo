@@ -120,13 +120,14 @@ export default function Contact() {
               backgroundSize: '40px 40px',
             }}
           />
-          <div className="max-w-container-max mx-auto relative z-10">
+          <div className="max-w-container-max mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left — text */}
             <FadeIn direction="up">
               <div className="font-mono text-xs uppercase tracking-[0.3em] text-primary mb-6">
                 Get In Touch
               </div>
               <h1
-                className="uppercase mb-10 max-w-4xl flex flex-col gap-2"
+                className="uppercase mb-10 flex flex-col gap-2"
                 style={{ fontSize: 'clamp(40px, 7vw, 80px)', lineHeight: 1.05, fontWeight: 300, letterSpacing: '-0.02em', fontFamily: 'Space Grotesk' }}
               >
                 <RevealText text="Let's Build" />
@@ -136,6 +137,19 @@ export default function Contact() {
               <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
                 Ready to improve your business? Contact our team today to see how our technology solutions can help you grow.
               </p>
+            </FadeIn>
+
+            {/* Right — image */}
+            <FadeIn direction="left" className="hidden lg:block">
+              <div className="relative">
+                <div className="absolute -top-8 -right-8 w-48 h-48 rounded-full pointer-events-none" style={{ background: 'rgba(223,255,0,0.12)', filter: 'blur(50px)' }} />
+                <img
+                  src="https://i.pinimg.com/736x/ee/c6/07/eec607001a0c2f778ddf14ab5bb8555f.jpg"
+                  alt="Contact Us"
+                  className="w-full h-auto rounded-2xl object-cover drop-shadow-2xl"
+                  style={{ maxHeight: '420px', objectFit: 'cover' }}
+                />
+              </div>
             </FadeIn>
           </div>
         </section>

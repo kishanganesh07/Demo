@@ -121,9 +121,10 @@ export default function Home() {
               <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full pointer-events-none" style={{ background: 'rgba(223,255,0,0.18)', filter: 'blur(60px)' }} />
               <div className="absolute -bottom-12 -left-12 w-48 h-48 rounded-full pointer-events-none" style={{ background: 'rgba(87,101,0,0.1)', filter: 'blur(40px)' }} />
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDe0xU6Ki6QHst3EcqubwQPvWfFc_E6Fy8ww74bkwkoyyO94ofx1lMBd5wETqPrhe4bdkkyNQhNBMluiOcZvNg8zs5L7lMg16NWxwg_d1uaYdwg8xUYeqNd_PZgmuwoEv-9_j_uwiqRKqtXhiiLV3ToeejyrpxvSwZ5vXvRTfHnwDCPUG2sqYKnWIUesv-1DfDLOep3a2Yvy1Gdm51S1ABtBC8MVO8jaCPfJZx1rnysYBCQL09o7-OY" 
-                alt="Dashboard Mockup" 
-                className="relative z-10 w-full h-auto drop-shadow-2xl"
+                src="https://i.pinimg.com/736x/6d/d8/bd/6dd8bd1e5b85b3f77415f9cca5da9b06.jpg" 
+                alt="Network Technology Visualization" 
+                className="relative z-10 w-full drop-shadow-2xl rounded-2xl object-cover"
+                style={{ maxHeight: '380px', objectFit: 'cover' }}
               />
             </FadeIn>
           </div>

@@ -38,18 +38,20 @@ export default function About() {
               backgroundSize: '40px 40px',
             }}
           />
-          <div className="max-w-container-max mx-auto px-margin-desktop w-full relative z-10">
+          <div className="max-w-container-max mx-auto px-margin-desktop w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left — text */}
             <FadeIn direction="up">
-              <div className="max-w-4xl">
+              <div className="max-w-xl">
                 <div className="flex items-center gap-4 mb-8">
                   <span className="w-12 h-[2px] bg-primary"></span>
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">Est. MMXXIV</span>
                 </div>
-                <h1 className="mb-12 leading-[1.1] tracking-tight flex flex-col gap-2" style={{ fontSize: 'clamp(48px, 8vw, 96px)', fontWeight: 300, fontFamily: 'Space Grotesk' }}>
+                <h1 className="mb-12 leading-[1.1] tracking-tight flex flex-col gap-2" style={{ fontSize: 'clamp(48px, 6vw, 80px)', fontWeight: 300, fontFamily: 'Space Grotesk' }}>
                   <RevealText text="Pioneering the Future of" />
                   <span className="text-primary italic inline-block overflow-hidden"><RevealText text="IT Services" delay={0.2} /></span>
                 </h1>
-                <p className="text-xl max-w-2xl text-on-surface-variant mb-12 leading-relaxed">
+                <p className="text-xl text-on-surface-variant mb-12 leading-relaxed">
                   We transform enterprise complexity into competitive advantage through world-class infrastructure, strategic consulting, and a relentless focus on long-term value.
                 </p>
                 <div className="flex gap-4">
@@ -59,8 +61,29 @@ export default function About() {
                 </div>
               </div>
             </FadeIn>
+
+            {/* Right — image */}
+            <FadeIn direction="left" className="hidden lg:block">
+              <div className="relative">
+                <div className="absolute -top-10 -right-10 w-56 h-56 rounded-full pointer-events-none" style={{ background: 'rgba(223,255,0,0.14)', filter: 'blur(60px)' }} />
+                <div className="absolute -bottom-6 -left-6 w-40 h-40 rounded-full pointer-events-none" style={{ background: 'rgba(87,101,0,0.1)', filter: 'blur(40px)' }} />
+                <img
+                  src="https://www.impactplus.com/hubfs/blog-image-uploads/best-about-us-pages.jpg"
+                  alt="About Us"
+                  className="w-full h-auto rounded-2xl object-cover drop-shadow-2xl relative z-10"
+                  style={{ maxHeight: '480px', objectFit: 'cover' }}
+                />
+                {/* Small floating badge */}
+                <div className="absolute bottom-6 left-6 z-20 bg-surface/95 backdrop-blur px-5 py-3 rounded-xl border border-secondary-fixed shadow-lg">
+                  <div className="text-xs font-bold uppercase tracking-widest text-primary mb-1">Est. 2024</div>
+                  <div className="text-sm font-semibold" style={{ fontFamily: 'Space Grotesk' }}>Matrix IT Solutions</div>
+                </div>
+              </div>
+            </FadeIn>
+
           </div>
         </section>
+
 
         {/* ── MARQUEE TICKER ─────────────────── */}
         <div className="w-full bg-on-background py-6 overflow-hidden whitespace-nowrap border-y border-outline">
