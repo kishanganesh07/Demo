@@ -3,216 +3,156 @@ export const servicesData = [
     slug: 'cloud-solutions',
     icon: 'cloud',
     title: 'Cloud Solutions',
-    desc: 'Enterprise-grade cloud migration and architecture optimization.',
-    theory: 'Our Cloud Solutions methodology is rooted in zero-downtime migrations and highly elastic, cost-optimized architectures. We build cloud-native systems that evolve with your workload, eliminating technical debt through rigorous infrastructure-as-code practices and immutable deployments.',
-    stats: {
-      projectsCompleted: 142,
-      activeEngineers: 35,
-      successRate: '99.9%',
-      avgCostReduction: '32%'
-    },
+    desc: 'Moving your business to the cloud easily and safely.',
+    theory: 'We help you move your business to the cloud without interrupting your daily work. Our solutions save you money and grow with your business, making sure your systems are always available and secure.',
+    stats: { projectsCompleted: 142, activeEngineers: 35, successRate: '99.9%', avgCostReduction: '32%' },
     projects: [
-      { id: 1, name: 'Project Nimbus', sector: 'Financial Services', desc: 'Migrated legacy core banking systems to a multi-cloud Kubernetes environment, achieving 40% performance gains.' },
-      { id: 2, name: 'Aether Platform', sector: 'Healthcare', desc: 'Built a HIPAA-compliant cloud data lake for real-time patient analytics across 400 hospitals.' },
-      { id: 3, name: 'Stratus Operations', sector: 'Retail', desc: 'Global e-commerce infrastructure optimization resulting in 99.999% uptime during peak holiday sales.' }
+      { id: 1, name: 'Project Nimbus', sector: 'Financial Services', desc: 'Moved old banking systems to the cloud, making them 40% faster.' },
+      { id: 2, name: 'Aether Platform', sector: 'Healthcare', desc: 'Built a secure cloud system for hospitals to safely store and review patient data.' },
+      { id: 3, name: 'Stratus Operations', sector: 'Retail', desc: 'Improved an online store to stay online 100% of the time during busy holiday sales.' }
     ]
   },
   {
     slug: 'ai',
     icon: 'psychology',
     title: 'AI',
-    desc: 'Integrating artificial intelligence into core business workflows.',
-    theory: 'We treat AI not as an experiment, but as a core utility. Our approach focuses on embedding deterministic, auditable AI models into enterprise workflows, ensuring that every algorithmic decision is traceable, secure, and actively drives operational efficiency without compromising data sovereignty.',
-    stats: {
-      projectsCompleted: 87,
-      activeEngineers: 24,
-      successRate: '98.5%',
-      avgCostReduction: '45%'
-    },
+    desc: 'Adding smart artificial intelligence to your daily work.',
+    theory: 'We use AI to help your business work smarter, not harder. Our safe and clear AI tools help you make better decisions, speed up your daily tasks, and keep your data completely private.',
+    stats: { projectsCompleted: 87, activeEngineers: 24, successRate: '98.5%', avgCostReduction: '45%' },
     projects: [
-      { id: 1, name: 'Automata Vision', sector: 'Manufacturing', desc: 'Deployed computer vision algorithms on assembly lines to detect microscopic defects in real-time.' },
-      { id: 2, name: 'Cognitive Logistics', sector: 'Supply Chain', desc: 'Implemented predictive routing models that reduced global shipping delays by 18%.' },
-      { id: 3, name: 'Neural Fraud Deflect', sector: 'Banking', desc: 'Integrated real-time transaction analysis AI, preventing $120M in fraudulent transfers annually.' }
+      { id: 1, name: 'Automata Vision', sector: 'Manufacturing', desc: 'Used smart cameras to automatically find tiny product mistakes on the factory line.' },
+      { id: 2, name: 'Cognitive Logistics', sector: 'Supply Chain', desc: 'Added smart routing that helped deliver packages 18% faster worldwide.' },
+      { id: 3, name: 'Neural Fraud Deflect', sector: 'Banking', desc: 'Set up an AI system that stopped $120M in bad transactions from happening.' }
     ]
   },
   {
     slug: 'generative-ai',
     icon: 'smart_toy',
     title: 'Generative AI',
-    desc: 'Custom LLMs and generative workflows for modern enterprises.',
-    theory: 'Generative AI requires rigorous guardrails. We specialize in fine-tuning massive language models on proprietary corporate data, deploying them in air-gapped or private cloud environments. We prioritize hallucination reduction and strict access controls over raw generative output.',
-    stats: {
-      projectsCompleted: 45,
-      activeEngineers: 18,
-      successRate: '97.0%',
-      avgCostReduction: '20%'
-    },
+    desc: 'Creating custom AI tools that can write, code, and assist your team.',
+    theory: 'We build special AI helpers just for your company. By training them safely on your own information, we give your team a powerful tool to write documents, find answers, and work faster without sharing your secrets.',
+    stats: { projectsCompleted: 45, activeEngineers: 18, successRate: '97.0%', avgCostReduction: '20%' },
     projects: [
-      { id: 1, name: 'Synapse Counsel', sector: 'Legal', desc: 'Developed a private LLM trained on case law to assist paralegals, cutting research time by 60%.' },
-      { id: 2, name: 'Creative Engine', sector: 'Marketing', desc: 'Built a generative asset pipeline that scales brand-compliant marketing copy across 12 languages.' },
-      { id: 3, name: 'CodeAssist Pro', sector: 'Technology', desc: 'Deployed an internal coding assistant fine-tuned on the client\'s proprietary codebase for secure developer acceleration.' }
+      { id: 1, name: 'Synapse Counsel', sector: 'Legal', desc: 'Created an AI helper to speed up legal research by 60%.' },
+      { id: 2, name: 'Creative Engine', sector: 'Marketing', desc: 'Built a tool that quickly writes marketing text in 12 different languages.' },
+      { id: 3, name: 'CodeAssist Pro', sector: 'Technology', desc: 'Gave developers a smart coding assistant to help them write code faster safely.' }
     ]
   },
   {
     slug: 'machine-learning',
     icon: 'neurology',
     title: 'Machine Learning',
-    desc: 'Predictive modeling and deep learning for data-rich environments.',
-    theory: 'Our machine learning practice is built on the scientific method. We engineer robust feature pipelines and deploy models using strict MLOps principles, ensuring models do not drift and remain highly performant as underlying data topologies shift over time.',
-    stats: {
-      projectsCompleted: 112,
-      activeEngineers: 42,
-      successRate: '99.1%',
-      avgCostReduction: '28%'
-    },
+    desc: 'Using data to predict the future and make smart choices.',
+    theory: 'We help you use your past information to predict what will happen next. Our systems learn from your data to help you spot problems before they happen and make better business decisions every day.',
+    stats: { projectsCompleted: 112, activeEngineers: 42, successRate: '99.1%', avgCostReduction: '28%' },
     projects: [
-      { id: 1, name: 'Predictive Maintenance', sector: 'Aviation', desc: 'Machine learning models predicting part failure on commercial jets 30 days before critical wear.' },
-      { id: 2, name: 'Dynamic Pricing', sector: 'Retail', desc: 'Reinforcement learning algorithms dynamically adjusting pricing across 10,000 SKUs based on real-time market signals.' },
-      { id: 3, name: 'Yield Optimizer', sector: 'Agriculture', desc: 'Deep learning applied to satellite imagery to optimize crop yield predictions and resource allocation.' }
+      { id: 1, name: 'Predictive Maintenance', sector: 'Aviation', desc: 'Built a system that warns about airplane part issues 30 days before they happen.' },
+      { id: 2, name: 'Dynamic Pricing', sector: 'Retail', desc: 'Created a tool that automatically adjusts product prices based on market changes.' },
+      { id: 3, name: 'Yield Optimizer', sector: 'Agriculture', desc: 'Used farm data to help predict and improve crop growth and harvests.' }
     ]
   },
   {
     slug: 'data-engineering',
     icon: 'database',
     title: 'Data Engineering',
-    desc: 'Scalable data pipelines and robust infrastructure foundations.',
-    theory: 'Data is only as valuable as its pipeline. We construct resilient, high-throughput data engineering architectures that can ingest, transform, and store petabytes of data with sub-millisecond latency. Our systems are built to withstand chaotic data influxes without breaking.',
-    stats: {
-      projectsCompleted: 205,
-      activeEngineers: 60,
-      successRate: '99.8%',
-      avgCostReduction: '40%'
-    },
+    desc: 'Building strong foundations to hold and move all your data safely.',
+    theory: 'Data is only useful if you can access it quickly and safely. We build strong systems that collect, organize, and store huge amounts of your information so it is always ready when you need it.',
+    stats: { projectsCompleted: 205, activeEngineers: 60, successRate: '99.8%', avgCostReduction: '40%' },
     projects: [
-      { id: 1, name: 'Pipeline Zero', sector: 'Telecommunications', desc: 'Redesigned a telecom data ingestion pipeline to process 5 billion daily events with zero data loss.' },
-      { id: 2, name: 'StreamCore', sector: 'Media & Entertainment', desc: 'Built a Kafka-based real-time analytics streaming platform for a global streaming service.' },
-      { id: 3, name: 'Unified Ledger', sector: 'Insurance', desc: 'Consolidated 15 legacy databases into a single, high-performance distributed ledger.' }
+      { id: 1, name: 'Pipeline Zero', sector: 'Telecommunications', desc: 'Fixed a phone company system to process 5 billion daily updates without losing any data.' },
+      { id: 2, name: 'StreamCore', sector: 'Media & Entertainment', desc: 'Built a fast system to track what millions of users are watching in real time.' },
+      { id: 3, name: 'Unified Ledger', sector: 'Insurance', desc: 'Combined 15 old databases into one fast, easy-to-use system.' }
     ]
   },
   {
     slug: 'business-intelligence',
     icon: 'insights',
     title: 'Business Intelligence',
-    desc: 'Strategic visualization and executive decision-making tools.',
-    theory: 'We transform raw telemetry into boardroom leverage. Our Business Intelligence solutions focus on reducing cognitive load, presenting complex multi-dimensional data through minimalist, high-impact executive dashboards that instantly highlight operational anomalies and strategic opportunities.',
-    stats: {
-      projectsCompleted: 156,
-      activeEngineers: 22,
-      successRate: '99.5%',
-      avgCostReduction: '15%'
-    },
+    desc: 'Clear charts and dashboards to help you run your business.',
+    theory: 'We turn complicated numbers into easy-to-read charts. Our simple dashboards give you a clear picture of how your business is doing, helping you spot opportunities and fix problems quickly.',
+    stats: { projectsCompleted: 156, activeEngineers: 22, successRate: '99.5%', avgCostReduction: '15%' },
     projects: [
-      { id: 1, name: 'Executive Prism', sector: 'Global Conglomerate', desc: 'Created a unified dashboard pulling KPIs from 8 diverse subsidiaries into a single pane of glass.' },
-      { id: 2, name: 'SupplyPulse', sector: 'Manufacturing', desc: 'Real-time supply chain visualization tool highlighting bottlenecks before they impact production.' },
-      { id: 3, name: 'Market Sentiment', sector: 'Finance', desc: 'Visualized real-time social and market sentiment data overlaid against trading volumes.' }
+      { id: 1, name: 'Executive Prism', sector: 'Global Conglomerate', desc: 'Created one simple screen that shows the health of 8 different companies at once.' },
+      { id: 2, name: 'SupplyPulse', sector: 'Manufacturing', desc: 'Built a tool to easily see supply problems before they slow down factory work.' },
+      { id: 3, name: 'Market Sentiment', sector: 'Finance', desc: 'Made visual charts to show what people are saying online about different markets.' }
     ]
   },
   {
     slug: 'data-analytics',
     icon: 'analytics',
     title: 'Data Analytics',
-    desc: 'Unlocking patterns through advanced statistical analysis.',
-    theory: 'Analytics is about separating signal from noise. We apply rigorous statistical methodologies to uncover hidden patterns within vast datasets, moving beyond simple descriptive metrics into prescriptive and diagnostic analytics that dictate precise business interventions.',
-    stats: {
-      projectsCompleted: 134,
-      activeEngineers: 28,
-      successRate: '98.9%',
-      avgCostReduction: '22%'
-    },
+    desc: 'Finding important patterns hidden inside your information.',
+    theory: 'We look closely at your data to find patterns that help your business. Instead of just showing you what happened in the past, we help you understand why it happened and what to do next.',
+    stats: { projectsCompleted: 134, activeEngineers: 28, successRate: '98.9%', avgCostReduction: '22%' },
     projects: [
-      { id: 1, name: 'Churn Predictor', sector: 'SaaS', desc: 'Analyzed user behavior logs to identify micro-patterns predicting churn, reducing attrition by 24%.' },
-      { id: 2, name: 'Cohort Alpha', sector: 'E-commerce', desc: 'Advanced cohort analysis identifying the most profitable customer journeys over a 5-year lifecycle.' },
-      { id: 3, name: 'Fraud Topology', sector: 'Insurance', desc: 'Network analysis uncovering organized fraud rings previously hidden within isolated claims data.' }
+      { id: 1, name: 'Churn Predictor', sector: 'SaaS', desc: 'Found out why customers were leaving, helping the company keep 24% more users.' },
+      { id: 2, name: 'Cohort Alpha', sector: 'E-commerce', desc: 'Figured out which online shoppers are the most profitable over a 5-year period.' },
+      { id: 3, name: 'Fraud Topology', sector: 'Insurance', desc: 'Used data connections to uncover hidden groups doing insurance fraud.' }
     ]
   },
   {
     slug: 'cloud-data-platforms',
     icon: 'storage',
     title: 'Cloud Data Platforms',
-    desc: 'Modernizing data warehouses and lakehouses in the cloud.',
-    theory: 'Modern enterprises require fluid data mobility. We architect and deploy massive cloud data platforms—from Snowflake to Databricks—ensuring high query performance, strict access governance, and the flexibility to seamlessly scale compute and storage independently.',
-    stats: {
-      projectsCompleted: 98,
-      activeEngineers: 38,
-      successRate: '99.7%',
-      avgCostReduction: '35%'
-    },
+    desc: 'Modern ways to store your company data in the cloud.',
+    theory: 'We help you set up modern cloud storage for your data. This makes it much faster to search your information, keeps it very secure, and lets you easily grow your storage as your business gets bigger.',
+    stats: { projectsCompleted: 98, activeEngineers: 38, successRate: '99.7%', avgCostReduction: '35%' },
     projects: [
-      { id: 1, name: 'Lakehouse Migration', sector: 'Retail', desc: 'Migrated a massive on-premise Hadoop cluster to a modern Cloud Lakehouse, cutting query times by 80%.' },
-      { id: 2, name: 'Data Mesh Init', sector: 'Financial Services', desc: 'Implemented a decentralized Data Mesh architecture across a global banking institution.' },
-      { id: 3, name: 'Warehouse Modernization', sector: 'Healthcare', desc: 'Consolidated clinical and operational data into a unified Snowflake environment for secure research access.' }
+      { id: 1, name: 'Lakehouse Migration', sector: 'Retail', desc: 'Moved huge amounts of store data to the cloud, making searches 80% faster.' },
+      { id: 2, name: 'Data Mesh Init', sector: 'Financial Services', desc: 'Set up a new, organized way for a global bank to share data between teams safely.' },
+      { id: 3, name: 'Warehouse Modernization', sector: 'Healthcare', desc: 'Put all hospital data into one secure cloud system for doctors and researchers.' }
     ]
   },
   {
     slug: 'data-governance',
     icon: 'gavel',
     title: 'Data Governance',
-    desc: 'Security, compliance, and quality frameworks for data assets.',
-    theory: 'Without governance, data is a liability. We implement strict, automated data governance frameworks that ensure regulatory compliance (GDPR, CCPA), enforce data quality rules at the point of ingestion, and provide full lineage tracking across the entire data lifecycle.',
-    stats: {
-      projectsCompleted: 175,
-      activeEngineers: 45,
-      successRate: '100%',
-      avgCostReduction: 'N/A'
-    },
+    desc: 'Keeping your data safe, clean, and following all rules.',
+    theory: 'We make sure your company data is safe and follows the law. We set up automatic rules to clean bad data, protect customer privacy, and keep track of where all your information comes from.',
+    stats: { projectsCompleted: 175, activeEngineers: 45, successRate: '100%', avgCostReduction: 'N/A' },
     projects: [
-      { id: 1, name: 'Compliance Core', sector: 'Banking', desc: 'Automated PII detection and masking across 5,000 databases to ensure GDPR compliance.' },
-      { id: 2, name: 'Lineage Trace', sector: 'Pharmaceuticals', desc: 'Implemented strict data lineage tracking for clinical trial data to satisfy FDA audit requirements.' },
-      { id: 3, name: 'Quality Gatekeeper', sector: 'Logistics', desc: 'Deployed automated data quality gates that quarantine malformed records before they pollute the data lake.' }
+      { id: 1, name: 'Compliance Core', sector: 'Banking', desc: 'Automatically hid personal customer details in 5,000 databases to follow privacy laws.' },
+      { id: 2, name: 'Lineage Trace', sector: 'Pharmaceuticals', desc: 'Kept careful track of medical trial data to pass important government health checks.' },
+      { id: 3, name: 'Quality Gatekeeper', sector: 'Logistics', desc: 'Added smart checks that stop broken or bad data from entering the main company systems.' }
     ]
   },
   {
     slug: 'app-modernization',
     icon: 'developer_board',
     title: 'App Modernization',
-    desc: 'Refactoring legacy systems into microservices architectures.',
-    theory: 'Legacy monoliths choke innovation. We systematically dismantle monolithic applications, strangling legacy code and refactoring it into resilient, scalable microservices orchestrated via Kubernetes, all while ensuring zero disruption to ongoing business operations.',
-    stats: {
-      projectsCompleted: 210,
-      activeEngineers: 75,
-      successRate: '99.4%',
-      avgCostReduction: '50%'
-    },
+    desc: 'Updating old software to work on modern, fast systems.',
+    theory: 'Old software can slow your business down. We carefully take your old systems and update them into fast, modern applications without stopping your daily work, making them much easier to use and update.',
+    stats: { projectsCompleted: 210, activeEngineers: 75, successRate: '99.4%', avgCostReduction: '50%' },
     projects: [
-      { id: 1, name: 'Monolith Strangler', sector: 'Travel', desc: 'Gradually decoupled a 15-year-old booking monolith into 40+ microservices over an 18-month period.' },
-      { id: 2, name: 'Containerization Push', sector: 'Government', desc: 'Dockerized and deployed legacy citizen portals onto a secure, highly-available Kubernetes cluster.' },
-      { id: 3, name: 'API Gateway Revamp', sector: 'Finance', desc: 'Rebuilt external partner integrations using a modern, secure, high-throughput API gateway architecture.' }
+      { id: 1, name: 'Monolith Strangler', sector: 'Travel', desc: 'Slowly updated a 15-year-old booking system into a fast, new one over 18 months.' },
+      { id: 2, name: 'Containerization Push', sector: 'Government', desc: 'Moved old government websites to a more secure and reliable modern setup.' },
+      { id: 3, name: 'API Gateway Revamp', sector: 'Finance', desc: 'Rebuilt how a bank connects to its partners to be faster and much safer.' }
     ]
   },
   {
     slug: 'devops',
     icon: 'terminal',
     title: 'DevOps',
-    desc: 'Continuous integration and automated delivery pipelines.',
-    theory: 'Velocity requires safety. Our DevOps philosophy is built on extreme automation. We construct CI/CD pipelines that enforce rigorous testing, security scanning, and automated rollbacks, allowing engineering teams to deploy to production multiple times a day with absolute confidence.',
-    stats: {
-      projectsCompleted: 340,
-      activeEngineers: 85,
-      successRate: '99.9%',
-      avgCostReduction: '60%'
-    },
+    desc: 'Helping your team build and release software quickly and safely.',
+    theory: 'We set up tools to help your developers work faster. By automating testing and releasing, your team can put out new updates every single day knowing that the changes are safe and will not break things.',
+    stats: { projectsCompleted: 340, activeEngineers: 85, successRate: '99.9%', avgCostReduction: '60%' },
     projects: [
-      { id: 1, name: 'Pipeline Acceleration', sector: 'Technology', desc: 'Reduced software release cycles from 3 weeks to 4 hours by implementing fully automated CI/CD.' },
-      { id: 2, name: 'GitOps Implementation', sector: 'Retail', desc: 'Transitioned infrastructure management entirely to GitOps, providing full auditability for all environment changes.' },
-      { id: 3, name: 'Chaos Engineering', sector: 'Streaming', desc: 'Introduced automated chaos testing into the deployment pipeline to ensure system resilience under stress.' }
+      { id: 1, name: 'Pipeline Acceleration', sector: 'Technology', desc: 'Helped a company release software updates in 4 hours instead of waiting 3 weeks.' },
+      { id: 2, name: 'GitOps Implementation', sector: 'Retail', desc: 'Changed how store systems are managed so every single change is tracked and checked.' },
+      { id: 3, name: 'Chaos Engineering', sector: 'Streaming', desc: 'Added tests to safely stress systems, making sure they stay online during busy times.' }
     ]
   },
   {
     slug: 'cybersecurity',
     icon: 'shield',
     title: 'Cybersecurity',
-    desc: 'Fortifying digital infrastructure against evolving threats.',
-    theory: 'We assume breach. Our cybersecurity architecture relies on Zero Trust principles, moving away from perimeter defense to micro-segmentation, continuous authentication, and automated threat isolation. We build digital fortresses that actively resist intrusion and lateral movement.',
-    stats: {
-      projectsCompleted: 450,
-      activeEngineers: 110,
-      successRate: '100%',
-      avgCostReduction: 'N/A'
-    },
+    desc: 'Protecting your business from online threats and hackers.',
+    theory: 'We keep your digital business safe. Instead of just putting a wall around your network, we protect every single piece of data. We build secure systems that automatically block hackers and stop threats quickly.',
+    stats: { projectsCompleted: 450, activeEngineers: 110, successRate: '100%', avgCostReduction: 'N/A' },
     projects: [
-      { id: 1, name: 'Zero Trust Init', sector: 'Defense', desc: 'Implemented a strict Zero Trust architecture across a network of 50,000 globally distributed endpoints.' },
-      { id: 2, name: 'Ransomware Shield', sector: 'Healthcare', desc: 'Deployed immutable backups and AI-driven anomaly detection to successfully thwart a coordinated ransomware attack.' },
-      { id: 3, name: 'Micro-Segmentation', sector: 'Finance', desc: 'Segmented a flat corporate network into hundreds of isolated micro-zones to prevent lateral movement of threats.' }
+      { id: 1, name: 'Zero Trust Init', sector: 'Defense', desc: 'Set up very strict security rules for 50,000 computers all over the world.' },
+      { id: 2, name: 'Ransomware Shield', sector: 'Healthcare', desc: 'Used smart backups and AI to successfully stop a major hacker attack at a hospital.' },
+      { id: 3, name: 'Micro-Segmentation', sector: 'Finance', desc: 'Split a bank network into hundreds of small, safe areas to stop threats from spreading.' }
     ]
   }
 ];

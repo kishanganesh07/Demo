@@ -31,28 +31,28 @@ const offices = [
 
 const faqs = [
   {
-    q: 'Legacy Refactoring Logic',
-    a: 'Our "Clean Room" strategy isolates technical debt within modern abstraction layers, allowing immediate performance gains while systematically decommissioning old infrastructure.',
+    q: 'How do you update old systems?',
+    a: 'We carefully separate your old software and build new, fast systems alongside it. This means your business keeps running smoothly while we make things better.',
   },
   {
-    q: 'Timeline Estimation',
-    a: 'Audits take 10–15 business days. Transformative migrations operate on tight 12-week cycles with bi-weekly deployments.',
+    q: 'How long do projects take?',
+    a: 'We start with a quick 2-3 week review. After that, we typically work in 12-week stages, showing you progress every two weeks.',
   },
   {
-    q: 'Do you take on startups?',
-    a: 'We engage organisations that require enterprise-grade systems. That includes well-funded Series B+ startups operating at scale.',
+    q: 'Who do you work with?',
+    a: 'We work with all types of growing businesses, from established companies to fast-growing startups that need strong, reliable technology.',
   },
   {
-    q: 'What is your pricing model?',
-    a: 'We operate on a value-based, fixed-fee model for architecture and deployment phases — aligning our incentives with your actual delivery, not hours billed.',
+    q: 'How do you charge for your work?',
+    a: 'We agree on a clear, fixed price before we start. This means you know exactly what you will pay for the results we deliver, with no surprise hourly bills.',
   },
   {
-    q: 'How do you handle classified or NDA work?',
-    a: 'We operate under mutual NDAs as standard. Our team holds relevant security clearances for sensitive government engagements.',
+    q: 'Is my company information safe?',
+    a: 'Yes, completely safe. We sign agreements to keep all your information private, and our team is trained to handle even the most secure data.',
   },
   {
-    q: 'How long does a typical cloud migration take?',
-    a: 'Highly dependent on legacy constraints, a standard monolithic-to-microservices transition is architected and executed within a 6-to-9-month timeframe.',
+    q: 'How long does moving to the cloud take?',
+    a: 'It depends on your current setup, but most companies can safely move to a modern cloud system in about 6 to 9 months.',
   },
 ]
 
@@ -123,18 +123,18 @@ export default function Contact() {
           <div className="max-w-container-max mx-auto relative z-10">
             <FadeIn direction="up">
               <div className="font-mono text-xs uppercase tracking-[0.3em] text-primary mb-6">
-                System.init(contact_v2)
+                Get In Touch
               </div>
               <h1
                 className="uppercase mb-10 max-w-4xl flex flex-col gap-2"
                 style={{ fontSize: 'clamp(40px, 7vw, 80px)', lineHeight: 1.05, fontWeight: 300, letterSpacing: '-0.02em', fontFamily: 'Space Grotesk' }}
               >
-                <RevealText text="Collaborative" />
-                <span className="text-on-surface-variant inline-block overflow-hidden"><RevealText text="Engineering" delay={0.2} /></span>
-                <span className="inline-block overflow-hidden"><RevealText text="Through " delay={0.4} /><em className="not-italic italic text-primary"><RevealText text="Precision." delay={0.4} /></em></span>
+                <RevealText text="Let's Build" />
+                <span className="text-on-surface-variant inline-block overflow-hidden"><RevealText text="Something" delay={0.2} /></span>
+                <span className="inline-block overflow-hidden"><RevealText text="Great " delay={0.4} /><em className="not-italic italic text-primary"><RevealText text="Together." delay={0.4} /></em></span>
               </h1>
               <p className="text-lg text-on-surface-variant leading-relaxed max-w-xl">
-                Transforming enterprise infrastructure into digital steel. Connect with our principal architects to begin the architectural audit.
+                Ready to improve your business? Contact our team today to see how our technology solutions can help you grow.
               </p>
             </FadeIn>
           </div>
@@ -324,13 +324,13 @@ export default function Contact() {
               <FadeIn direction="up" className="lg:w-1/3">
                 <div className="flex items-center gap-3 mb-6">
                   <span className="w-8 h-px" style={{ background: '#dfff00' }} />
-                  <span className="text-xs font-bold uppercase tracking-widest text-primary">Knowledge Base</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-primary">Common Questions</span>
                 </div>
                 <h2 className="uppercase mb-5" style={{ fontSize: 'clamp(36px, 4vw, 52px)', fontWeight: 300, lineHeight: 1.1, fontFamily: 'Space Grotesk' }}>
                   FAQ
                 </h2>
                 <p className="text-on-surface-variant text-base leading-relaxed max-w-xs">
-                  Protocols and methodologies explained for radical transparency.
+                  Clear answers to the questions we hear most often.
                 </p>
               </FadeIn>
 
@@ -351,17 +351,17 @@ export default function Contact() {
           <FadeIn direction="up">
             <p className="text-xs font-mono uppercase tracking-widest text-primary mb-6">Ready when you are</p>
             <h2 className="uppercase mb-6" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 700, lineHeight: 1.1, fontFamily: 'Space Grotesk' }}>
-              Let's build something permanent.
+              Let's work together.
             </h2>
             <p className="text-on-surface-variant text-lg mb-10 max-w-lg mx-auto">
-              We only take projects that redefine industries. If your infrastructure demands precision, we should talk.
+              Ready to improve your business with technology? We would love to hear about your project and see how we can help.
             </p>
             <a
               href="mailto:audit@matrixit.com"
               className="inline-flex items-center gap-3 px-10 py-4 rounded-xl font-bold text-base hover:opacity-90 transition-all active:scale-95"
               style={{ background: '#dfff00', color: '#1A1C1E' }}
             >
-              Start an Engagement
+              Contact Us Today
               <span className="material-symbols-outlined">east</span>
             </a>
           </FadeIn>

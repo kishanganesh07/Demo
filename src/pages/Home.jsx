@@ -30,30 +30,30 @@ const caseStudies = [
   {
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCvLX7mWzeJWMDGzD10uHI574aavFwyaAm0l2dytoX612FND-i1NfW3JLiX_lBtM75quxHAe7d6eDmMBeyCECsIy0JvszkXFzwNkfHJF4fTe4ZRM1EC6wB5MiFWlc9EXbX6J8QscZdacsk7ag-2Fus_LwNtAmHWzb458Ftv77Tl2BG1nyRiggYsTk6tJk7H-7znxKi_6kV1zGGWIlTCWI1ULBXPjXSnb86bQbzVWwoD6sSPDH6se7Z0',
     alt: 'Retail Analytics', cat: 'Retail', service: 'AI / Analytics',
-    title: 'Retail Analytics Modernization',
-    body: 'Real-time inventory optimization for a global Fortune 500 retailer.',
+    title: 'Retail Data Upgrade',
+    body: 'Better inventory tracking for a global retail company.',
     kpi: '-40%', kpiLabel: 'Cost reduction',
   },
   {
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBMzKka--1jzhZHEzt0LsftKqhZ6pDA5L4PT1EJkPdWUlAVG6s-vE_vCEPjv3LAaUMvsyN8tAlGojrQtfdNpGdLL-pGmuQpQ1ixxKiAR3lbFkT6hWe8_EZndh_3t7kaWdtPwvHdb1zwRNpjRz2d070KUAJKeSRXlY2gYJdC7qM6GzMbTH7g8PCSBI4y04ntE7OFI7kw8M5b-z2Tqq-Zyyxt2aGaSZYIP1KUiobewV_-EmjrxdADnWQ7',
     alt: 'Cloud Migration', cat: 'Finance', service: 'Cloud',
-    title: 'Cloud Migration Strategy',
-    body: 'Scalable multi-cloud infrastructure for a leading fintech ecosystem.',
+    title: 'Cloud Upgrade Strategy',
+    body: 'Reliable cloud services for a growing financial company.',
     kpi: '99.99%', kpiLabel: 'Uptime achieved',
   },
   {
     img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCRuAKaMBj8ZYkksJgJdC9cbDjXPxLbGhc5EVh2fTbN3KUfrkXuYib_PYGbDfQBu-B3Pk_WFyQOCOnIukJdigJX72xj3tmUHLxbT4Uw7vH0u5jxf1sAPSEoDiuV_LI9dbepkRFsUfZRcLJsTQz0BokXkUZaIYC5hf4wbI58Dmd8ipJXkN6Jz6xpsKXHPu8wWmawkdlzFwYEutWRtsmsYCH3PfotNgO0GDpEI58-iq0831TCP622Ujtp',
     alt: 'AI Fraud Detection', cat: 'Insurance', service: 'Gen AI',
-    title: 'AI Fraud Detection System',
-    body: 'Advanced neural networks identifying risk patterns in claim processing.',
+    title: 'Smart Fraud Detection',
+    body: 'Smart systems to find risks in insurance claims quickly.',
     kpi: '3.5x', kpiLabel: 'Faster detection',
   },
 ]
 
 const articles = [
-  { type: 'WHITE PAPER',    title: 'The Future of AI in Enterprise Infrastructure',   body: 'Exploring the transition from experimental pilots to production-ready AI ecosystems.',  author: 'Dr. Sarah Jenkins', role: 'Chief AI Architect', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150' },
-  { type: 'STRATEGY GUIDE', title: 'Multi-Cloud Migration: Avoiding Vendor Lock-In',  body: 'Strategic frameworks for building resilient, portable cloud architectures.',             author: 'Mark Sterling',     role: 'VP of Engineering', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150' },
-  { type: 'TECHNICAL CASE', title: 'Generative AI for Legacy Code Refactoring',        body: 'How we used specialized LLMs to accelerate a legacy systems modernization project.',     author: 'Anita Rao',         role: 'Senior DevOps Lead', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150&h=150' },
+  { type: 'ARTICLE',    title: 'The Future of AI in Business',   body: 'How to start using AI to help your business grow today.',  author: 'Dr. Sarah Jenkins', role: 'IT Expert', img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150' },
+  { type: 'GUIDE', title: 'Cloud Services: Keep Your Options Open',  body: 'How to use different cloud platforms safely and easily.',             author: 'Mark Sterling',     role: 'VP of Engineering', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150&h=150' },
+  { type: 'CASE STUDY', title: 'Using AI to Update Old Systems',        body: 'How AI helps us update old computer systems quickly.',     author: 'Anita Rao',         role: 'Senior Engineer', img: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150&h=150' },
 ]
 
 /* ── STAT COUNTER HOOK ─────────────────────── */
@@ -100,12 +100,11 @@ export default function Home() {
             {/* Left – Copy */}
             <FadeIn direction="up" className="max-w-2xl">
               <h1 className="mb-6 text-on-background" style={{ fontSize: 'clamp(48px, 6vw, 72px)', lineHeight: '1.1', fontWeight: 300, letterSpacing: '-0.03em', fontFamily: 'Space Grotesk' }}>
-                Accelerating Digital Transformation with{' '}
-                <span className="text-primary italic">AI, Cloud &amp; Data Engineering</span>
+                Simple and Powerful IT Solutions for{' '}
+                <span className="text-primary italic">Your Business</span>
               </h1>
               <p className="text-on-surface-variant text-lg leading-relaxed mb-10">
-                Helping enterprises modernize through Artificial Intelligence, Cloud Platforms,
-                Data Engineering, Business Intelligence and Digital Transformation.
+                We provide easy-to-use IT services to help your company run smoother, faster, and more securely.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="px-10 py-4 rounded-xl font-bold text-lg hover:shadow-xl hover:scale-[1.02] transition-all active:scale-95" style={{ background: '#dfff00', color: '#1A1C1E' }}>
@@ -138,9 +137,9 @@ export default function Home() {
           <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up" className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-8">
             <div className="max-w-2xl">
-              <h2 className="font-headline-lg text-headline-lg mb-4">World-Class Digital Services</h2>
+              <h2 className="font-headline-lg text-headline-lg mb-4">Our Services</h2>
               <p className="text-on-surface-variant text-lg">
-                Our cross-disciplinary teams blend strategic consulting with deep technical expertise to deliver transformative results.
+                We combine business strategy with technical skills to deliver great results for your company.
               </p>
             </div>
            
@@ -168,15 +167,15 @@ export default function Home() {
           <div className="max-w-container-max mx-auto px-margin-desktop grid lg:grid-cols-2 gap-20 items-center">
             <FadeIn direction="up">
               <h2 className="font-headline-lg text-headline-lg mb-6">
-                Why Strategic Leaders <span style={{ color: '#dfff00' }}>Partner With Us</span>
+                Why Choose <span style={{ color: '#dfff00' }}>Us</span>
               </h2>
               <p className="text-lg leading-relaxed mb-10" style={{ color: 'rgba(242,242,220,0.7)' }}>
-                MATRIX IT combines the agility of a tech firm with the strategic rigor of a global consultancy. We don't just build technology; we engineer business outcomes.
+                We don't just build technology; we help your business succeed with reliable and clear IT solutions.
               </p>
               <div className="space-y-5">
                 {[
-                  { title: 'Execution Excellence', body: 'Proven methodology for complex migrations and integrations.' },
-                  { title: 'Talent Density',        body: 'Access to PhD-level researchers and senior engineers.' },
+                  { title: 'Great Execution', body: 'A proven step-by-step process to get things done right.' },
+                  { title: 'Expert Team',        body: 'Access to highly skilled professionals.' },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0" style={{ background: '#dfff00' }}>
@@ -213,9 +212,9 @@ export default function Home() {
         <section className="py-section-gap bg-surface">
           <div className="max-w-container-max mx-auto px-margin-desktop">
             <FadeIn direction="up" className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="font-headline-lg text-headline-lg mb-4">Vertical Expertise</h2>
+              <h2 className="font-headline-lg text-headline-lg mb-4">Industries We Serve</h2>
               <p className="text-on-surface-variant text-lg">
-                Solving industry-specific challenges through deep domain knowledge and specialized technology frameworks.
+                We help businesses across many industries solve their unique challenges with technology.
               </p>
             </FadeIn>
             <StaggerContainer className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5">
@@ -239,7 +238,7 @@ export default function Home() {
         <section className="py-section-gap bg-white border-y border-secondary-fixed mt-10">
           <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up">
-            <h2 className="font-headline-lg text-headline-lg mb-14">Results Delivered</h2>
+            <h2 className="font-headline-lg text-headline-lg mb-14">Our Success Stories</h2>
           </FadeIn>
           <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {caseStudies.map((cs) => (
@@ -271,20 +270,20 @@ export default function Home() {
         {/* ══ ENGINEERING LIFECYCLE (Vertical) ════════════ */}
         <div className="bg-surface-container-low border-y border-secondary-fixed">
           <VerticalStepTimeline
-            title="Our Engineering Lifecycle"
-            subtitle="A rigorous, end-to-end framework designed for velocity and precision."
+            title="How We Work"
+            subtitle="A simple, step-by-step process to deliver the best results."
             steps={steps.map((s, i) => ({
               title: s,
               desc: [
-                'Deep discovery sessions to understand your business goals, constraints, and existing systems.',
-                'Crafting a tailored digital transformation roadmap aligned to ROI objectives.',
-                'Designing scalable, secure system architectures with zero-trust principles.',
-                'UX-led interface design with accessibility and brand consistency baked in.',
-                'Agile sprint-based delivery with daily standups and transparent progress tracking.',
-                'Rigorous QA including load testing, security scanning, and regression suites.',
-                'Zero-downtime deployment with shadow traffic testing and automated rollbacks.',
-                'Continuous performance tuning, cost optimisation and feature iteration.',
-                '24/7 monitoring, SLA-backed support and quarterly architecture reviews.',
+                'Meeting to understand your business goals and needs.',
+                'Creating a clear plan to help your business grow.',
+                'Designing safe and reliable systems.',
+                'Creating easy-to-use interfaces for your team.',
+                'Building the software step-by-step with regular updates.',
+                'Testing everything to make sure it works perfectly.',
+                'Launching your new system smoothly without interruptions.',
+                'Improving speed and lowering costs over time.',
+                'Providing 24/7 support and regular check-ins.',
               ][i],
             }))}
           />
@@ -295,8 +294,8 @@ export default function Home() {
           <div className="max-w-container-max mx-auto px-margin-desktop">
           <FadeIn direction="up" className="flex flex-col sm:flex-row justify-between items-baseline mb-12 gap-4">
             <div>
-              <h2 className="font-headline-lg text-headline-lg mb-3">Strategic Insights</h2>
-              <p className="text-on-surface-variant text-lg">Thought leadership from our team of senior architects and AI researchers.</p>
+              <h2 className="font-headline-lg text-headline-lg mb-3">Latest Articles</h2>
+              <p className="text-on-surface-variant text-lg">Helpful tips and news from our team.</p>
             </div>
            
           </FadeIn>

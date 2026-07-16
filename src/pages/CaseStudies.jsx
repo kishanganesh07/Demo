@@ -15,10 +15,10 @@ export default function CaseStudies() {
 
         {/* ── HERO ──────────────────────────── */}
         <PageHero
-          eyebrow="Selected Projects"
-          title="Proven impact through"
-          highlight="digital engineering."
-          body="Our work focuses on critical infrastructure and high-performance systems. We re-engineer the digital fabric for the world's most demanding industries."
+          eyebrow="Our Work"
+          title="Real results for"
+          highlight="real businesses."
+          body="See how we have helped companies solve their biggest challenges with smart and simple technology solutions."
         />
 
         {/* ── CASE STUDIES GRID ───────────────── */}
@@ -73,13 +73,13 @@ export default function CaseStudies() {
           <div className="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <FadeIn direction="up">
               <h2 className="mb-5" style={{ fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 800, lineHeight: 1.1, fontFamily: 'Space Grotesk' }}>
-                Let's build something permanent.
+                Let's work together.
               </h2>
               <p className="text-lg mb-8" style={{ color: 'rgba(242,242,220,0.65)' }}>
-                We only take projects that redefine industries. If your infrastructure demands precision, we should talk.
+                Ready to improve your business with technology? We would love to hear about your project and see how we can help.
               </p>
               <Link to="/contact" className="inline-flex items-center gap-3 px-10 py-4 rounded-xl font-bold text-base hover:opacity-90 transition-all" style={{ background: '#dfff00', color: '#1A1C1E' }}>
-                Start an Engagement <span className="material-symbols-outlined">arrow_forward</span>
+                Contact Us Today <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </FadeIn>
             <FadeIn direction="left">

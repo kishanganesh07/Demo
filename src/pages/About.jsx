@@ -46,11 +46,11 @@ export default function About() {
                   <span className="text-xs font-bold uppercase tracking-widest text-primary">Est. MMXXIV</span>
                 </div>
                 <h1 className="mb-12 leading-[1.1] tracking-tight flex flex-col gap-2" style={{ fontSize: 'clamp(48px, 8vw, 96px)', fontWeight: 300, fontFamily: 'Space Grotesk' }}>
-                  <RevealText text="Pioneering the" />
-                  <span className="text-primary italic inline-block overflow-hidden"><RevealText text="Enterprise Future" delay={0.2} /></span>
+                  <RevealText text="Pioneering the Future of" />
+                  <span className="text-primary italic inline-block overflow-hidden"><RevealText text="IT Services" delay={0.2} /></span>
                 </h1>
                 <p className="text-xl max-w-2xl text-on-surface-variant mb-12 leading-relaxed">
-                  MATRIX IT is a high-precision IT consultancy specialized in next-generation AI infrastructure and structural digital integrity. We build for permanence in a landscape of temporary solutions.
+                  We transform enterprise complexity into competitive advantage through world-class infrastructure, strategic consulting, and a relentless focus on long-term value.
                 </p>
                 <div className="flex gap-4">
                   <Link to="/contact" className="px-8 py-4 rounded-xl font-bold text-base hover:opacity-90 transition-all active:scale-95" style={{ background: '#dfff00', color: '#1A1C1E' }}>
@@ -80,29 +80,29 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
               <FadeIn direction="right" className="lg:col-span-5 mb-12 lg:mb-0">
                 <h2 className="mb-8 leading-tight" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>
-                  Architecting <br />Absolute Integrity
+                  Our <br />Mission
                 </h2>
                 <p className="text-on-surface-variant leading-relaxed max-w-md text-lg">
-                  Our approach is rooted in the Swiss tradition of functional reduction. We believe that clarity is the ultimate form of security in digital infrastructure.
+                  To architect the digital backbone of the world's most ambitious organizations. We believe technology should feel invisible—seamlessly supporting human ingenuity and enterprise growth through proactive intelligence.
                 </p>
               </FadeIn>
               <div className="lg:col-span-7 space-y-16">
                 <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <StaggerItem direction="up">
                     <div className="p-10 bg-surface-container-low border border-secondary-fixed rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6">01 / REDUCTION</div>
-                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Functional Void</h3>
+                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6">01 / PARTNERSHIP FIRST</div>
+                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Building Legacies</h3>
                       <p className="text-on-surface-variant text-sm leading-relaxed">
-                        We eliminate the non-essential. In IT architecture, complexity is the enemy of security. Our Swiss-inspired approach focuses on the raw skeletal structure of systems.
+                        We don't just provide services; we build 10-year legacies alongside our clients. Founded on the principle that IT should be an accelerator, not a bottleneck, we empower global leaders to scale with confidence.
                       </p>
                     </div>
                   </StaggerItem>
                   <StaggerItem direction="up">
                     <div className="p-10 bg-on-background text-surface border border-on-background rounded-2xl h-full shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all duration-300">
-                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6" style={{ color: '#dfff00' }}>02 / INTEGRITY</div>
-                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Structural Purity</h3>
+                      <div className="text-primary font-bold text-xs uppercase tracking-widest mb-6" style={{ color: '#dfff00' }}>02 / UNCOMPROMISING QUALITY</div>
+                      <h3 className="text-2xl font-semibold mb-4" style={{ fontFamily: 'Space Grotesk' }}>Innovation as Standard</h3>
                       <p className="opacity-70 text-sm leading-relaxed">
-                        Every line of code, every server blade, every data packet must serve a defined architectural purpose. We do not hide failures behind layers of middleware.
+                        Precision-engineered protocols that ensure 99.99% uptime for critical operations. We deliver enterprise-grade solutions that democratize access to high-performance cloud infrastructure and ethical AI.
                       </p>
                     </div>
                   </StaggerItem>
@@ -128,8 +128,8 @@ export default function About() {
         <section className="bg-white px-margin-desktop py-section-gap border-y border-secondary-fixed">
           <div className="max-w-container-max mx-auto">
             <FadeIn direction="up" className="text-center mb-24 max-w-2xl mx-auto">
-              <h2 className="mb-6" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>Leadership Architecture</h2>
-              <p className="text-on-surface-variant text-lg">The minds behind MATRIX IT. A multidisciplinary collective dedicated to the permanence of digital structures.</p>
+              <h2 className="mb-6" style={{ fontSize: 'clamp(36px, 4vw, 56px)', fontWeight: 400, fontFamily: 'Space Grotesk' }}>Driven by Visionaries</h2>
+              <p className="text-on-surface-variant text-lg">The minds behind our mission. A multidisciplinary collective dedicated to empowering organizations with precision and confidence.</p>
             </FadeIn>
             <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-12">
               {leaders.map((l, i) => (

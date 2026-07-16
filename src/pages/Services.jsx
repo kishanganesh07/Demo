@@ -7,10 +7,10 @@ import { PageHero, SectionLabel, VerticalStepTimeline } from '../components/Page
 import { servicesData } from '../data/servicesData'
 
 const protocol = [
-  { title: 'Architectural Audit',    desc: 'Deep inspection of existing infrastructure. Identifying single points of failure, latency bottlenecks, and structural weaknesses.' },
-  { title: 'Blueprint Synthesis',    desc: 'Zero-trust, multi-AZ blueprint development. Every component is modeled for failure resistance and autonomous recovery.' },
-  { title: 'Parallel Deployment',    desc: 'Phased rollout with real-time shadow traffic testing. We guarantee zero downtime and zero data loss during transitions.' },
-  { title: 'Continuous Optimisation', desc: 'Post-deployment monitoring loops ensure performance benchmarks are continuously met and improved upon.' },
+  { title: 'Initial Review',    desc: 'We look closely at how your business works today to find areas where technology can help.' },
+  { title: 'Clear Planning',    desc: 'We create a clear, step-by-step plan to improve your systems safely and securely.' },
+  { title: 'Smooth Setup',    desc: 'We build and turn on your new tools carefully so your daily work is never interrupted.' },
+  { title: 'Ongoing Support', desc: 'We keep checking your systems to make sure everything runs fast and stays updated.' },
 ]
 
 export default function Services() {
@@ -23,9 +23,9 @@ export default function Services() {
         {/* ── HERO ──────────────────────────── */}
         <PageHero
           eyebrow="Service Overview"
-          title="Scalable Innovation"
-          highlight="at Enterprise Speed"
-          body="We don't just build systems — we architect permanence. Our multidisciplinary squads deploy high-precision AI and infrastructure designed for the world's most demanding technical environments."
+          title="Growing Your Business"
+          highlight="Faster and Safer"
+          body="We build reliable systems that help your business grow. Our team provides smart and secure technology solutions designed to make your daily work easier."
         />
 
         {/* ── SERVICE LIST ──────────────────── */}
@@ -58,8 +58,8 @@ export default function Services() {
         {/* ── METHODOLOGY (Vertical Timeline) ── */}
         <div className="bg-surface-container-low border-y border-secondary-fixed">
           <VerticalStepTimeline
-            title="The MATRIX IT Protocol"
-            subtitle="A rigorous, end-to-end delivery framework designed for velocity and precision."
+            title="How We Work"
+            subtitle="A simple, proven process to deliver the best results for your company."
             steps={protocol}
           />
         </div>
@@ -69,10 +69,10 @@ export default function Services() {
           <FadeIn direction="up">
             <SectionLabel>Ready to Begin?</SectionLabel>
             <h2 className="font-headline-lg text-headline-lg mb-5 max-w-3xl mx-auto">
-              Ready to build the foundation of your legacy?
+              Ready to grow your business?
             </h2>
             <p className="text-on-surface-variant text-lg mb-10 max-w-xl mx-auto">
-              Every engagement starts with a no-cost architecture consultation. Let's map your transformation.
+              We always start with a free consultation to understand your needs. Let's talk about how we can help.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link to="/contact" className="px-10 py-4 rounded-xl font-bold text-base transition-all hover:opacity-90" style={{ background: '#dfff00', color: '#1A1C1E' }}>
